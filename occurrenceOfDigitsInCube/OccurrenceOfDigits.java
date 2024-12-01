@@ -3,10 +3,6 @@ import java.util.Scanner;
 
 class OccurrenceOfDigits {
 
-    public static int cubeOfNum(int n) {
-        return n * n * n;
-    }
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter Any Number:");
@@ -16,7 +12,7 @@ class OccurrenceOfDigits {
         int target = scan.nextInt();
 
         int count = 0;
-        int cube = cubeOfNum(n);
+        int cube = n * n * n;
 
         while (cube > 0) {
             int digit = cube % 10;
